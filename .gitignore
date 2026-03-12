@@ -1,0 +1,17 @@
+# Build output
+TriCore Debug (TASKING)/
+TriCore Release (TASKING)/
+
+# IDE settings
+.settings/
+.ads/
+.claude/
+
+# Build artifacts
+*.o
+*.src
+*.d
+*.elf
+*.hex
+*.map
+*.lst
