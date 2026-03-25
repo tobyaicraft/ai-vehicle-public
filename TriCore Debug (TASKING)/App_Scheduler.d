@@ -16,6 +16,8 @@ App_Scheduler.o :	"D:\\01_WorkPlace\\170_AI\\03_claude_project\\ai-vehicle\\ai-v
 "D:\\01_WorkPlace\\170_AI\\03_claude_project\\ai-vehicle\\ai-vehicle-public\\Libraries\\iLLD\\TC27D\\Tricore\\Cpu\\Std\Platform_Types.h" :
 App_Scheduler.o :	"D:\\01_WorkPlace\\170_AI\\03_claude_project\\ai-vehicle\\ai-vehicle-public\\Libraries\\iLLD\\TC27D\\Tricore\\Cpu\\Std\Ifx_TypesTasking.h"
 "D:\\01_WorkPlace\\170_AI\\03_claude_project\\ai-vehicle\\ai-vehicle-public\\Libraries\\iLLD\\TC27D\\Tricore\\Cpu\\Std\Ifx_TypesTasking.h" :
+App_Scheduler.o :	..\Drv_Stm.h
+..\Drv_Stm.h :
 App_Scheduler.o :	"D:\\01_WorkPlace\\170_AI\\03_claude_project\\ai-vehicle\\ai-vehicle-public\\Libraries\\iLLD\\TC27D\\Tricore\Stm\Std\IfxStm.h"
 "D:\\01_WorkPlace\\170_AI\\03_claude_project\\ai-vehicle\\ai-vehicle-public\\Libraries\\iLLD\\TC27D\\Tricore\Stm\Std\IfxStm.h" :
 App_Scheduler.o :	"D:\\01_WorkPlace\\170_AI\\03_claude_project\\ai-vehicle\\ai-vehicle-public\\Libraries\\iLLD\\TC27D\\Tricore\_Impl\IfxStm_cfg.h"
@@ -88,5 +90,7 @@ App_Scheduler.o :	"D:\\01_WorkPlace\\170_AI\\03_claude_project\\ai-vehicle\\ai-v
 "D:\\01_WorkPlace\\170_AI\\03_claude_project\\ai-vehicle\\ai-vehicle-public\\Libraries\\Infra\\Sfr\\TC27D\\_Reg\IfxCbs_reg.h" :
 App_Scheduler.o :	"D:\\01_WorkPlace\\170_AI\\03_claude_project\\ai-vehicle\\ai-vehicle-public\\Libraries\\Infra\\Sfr\\TC27D\\_Reg\IfxCbs_regdef.h"
 "D:\\01_WorkPlace\\170_AI\\03_claude_project\\ai-vehicle\\ai-vehicle-public\\Libraries\\Infra\\Sfr\\TC27D\\_Reg\IfxCbs_regdef.h" :
+App_Scheduler.o :	..\Drv_Adc.h
+..\Drv_Adc.h :
 App_Scheduler.o :	"D:\\01_WorkPlace\\170_AI\\03_claude_project\\ai-vehicle\\ai-vehicle-public\\Libraries\\iLLD\\TC27D\\Tricore\\Cpu\\Irq\IfxCpu_Irq.h"
 "D:\\01_WorkPlace\\170_AI\\03_claude_project\\ai-vehicle\\ai-vehicle-public\\Libraries\\iLLD\\TC27D\\Tricore\\Cpu\\Irq\IfxCpu_Irq.h" :

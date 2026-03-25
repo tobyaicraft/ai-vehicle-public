@@ -29,6 +29,7 @@
 #include "Drv_Int.h"
 #include "Drv_Dio.h"
 #include "Drv_Stm.h"
+#include "Drv_Adc.h"
 #include "App_Scheduler.h"
 
 IfxCpu_syncEvent cpuSyncEvent = 0;
@@ -40,6 +41,9 @@ void core0_main(void)
 
     /* Initialize GPIO */
     DrvDio_Init();
+
+    /* Initialize VADC - AN0 potentiometer */
+    DrvAdc_Init();
 
     /* Initialize STM0 1ms interrupt */
     DrvSTM_Init();

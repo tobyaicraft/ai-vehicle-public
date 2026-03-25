@@ -74,7 +74,25 @@ Cpu0_Main.o :	"D:\\01_WorkPlace\\170_AI\\03_claude_project\\ai-vehicle\\ai-vehic
 "D:\\01_WorkPlace\\170_AI\\03_claude_project\\ai-vehicle\\ai-vehicle-public\\Libraries\\Infra\\Sfr\\TC27D\\_Reg\IfxPort_regdef.h" :
 Cpu0_Main.o :	"D:\\01_WorkPlace\\170_AI\\03_claude_project\\ai-vehicle\\ai-vehicle-public\\Libraries\\iLLD\\TC27D\\Tricore\_PinMap\Ifx_PinMap.h"
 "D:\\01_WorkPlace\\170_AI\\03_claude_project\\ai-vehicle\\ai-vehicle-public\\Libraries\\iLLD\\TC27D\\Tricore\_PinMap\Ifx_PinMap.h" :
-Cpu0_Main.o :	"D:\\01_WorkPlace\\170_AI\\03_claude_project\\ai-vehicle\\ai-vehicle-public\\Libraries\\iLLD\\TC27D\\Tricore\\Scu\\Std\IfxScuWdt.h"
-"D:\\01_WorkPlace\\170_AI\\03_claude_project\\ai-vehicle\\ai-vehicle-public\\Libraries\\iLLD\\TC27D\\Tricore\\Scu\\Std\IfxScuWdt.h" :
+Cpu0_Main.o :	..\Drv_Int.h
+..\Drv_Int.h :
+Cpu0_Main.o :	..\Drv_Dio.h
+..\Drv_Dio.h :
+Cpu0_Main.o :	..\Drv_Stm.h
+..\Drv_Stm.h :
+Cpu0_Main.o :	"D:\\01_WorkPlace\\170_AI\\03_claude_project\\ai-vehicle\\ai-vehicle-public\\Libraries\\iLLD\\TC27D\\Tricore\Stm\Std\IfxStm.h"
+"D:\\01_WorkPlace\\170_AI\\03_claude_project\\ai-vehicle\\ai-vehicle-public\\Libraries\\iLLD\\TC27D\\Tricore\Stm\Std\IfxStm.h" :
+Cpu0_Main.o :	"D:\\01_WorkPlace\\170_AI\\03_claude_project\\ai-vehicle\\ai-vehicle-public\\Libraries\\iLLD\\TC27D\\Tricore\_Impl\IfxStm_cfg.h"
+"D:\\01_WorkPlace\\170_AI\\03_claude_project\\ai-vehicle\\ai-vehicle-public\\Libraries\\iLLD\\TC27D\\Tricore\_Impl\IfxStm_cfg.h" :
+Cpu0_Main.o :	"D:\\01_WorkPlace\\170_AI\\03_claude_project\\ai-vehicle\\ai-vehicle-public\\Libraries\\iLLD\\TC27D\\Tricore\Src\Std\IfxSrc.h"
+"D:\\01_WorkPlace\\170_AI\\03_claude_project\\ai-vehicle\\ai-vehicle-public\\Libraries\\iLLD\\TC27D\\Tricore\Src\Std\IfxSrc.h" :
+Cpu0_Main.o :	"D:\\01_WorkPlace\\170_AI\\03_claude_project\\ai-vehicle\\ai-vehicle-public\\Libraries\\iLLD\\TC27D\\Tricore\_Impl\IfxSrc_cfg.h"
+"D:\\01_WorkPlace\\170_AI\\03_claude_project\\ai-vehicle\\ai-vehicle-public\\Libraries\\iLLD\\TC27D\\Tricore\_Impl\IfxSrc_cfg.h" :
+Cpu0_Main.o :	"D:\\01_WorkPlace\\170_AI\\03_claude_project\\ai-vehicle\\ai-vehicle-public\\Libraries\\Infra\\Sfr\\TC27D\\_Reg\IfxCbs_reg.h"
+"D:\\01_WorkPlace\\170_AI\\03_claude_project\\ai-vehicle\\ai-vehicle-public\\Libraries\\Infra\\Sfr\\TC27D\\_Reg\IfxCbs_reg.h" :
+Cpu0_Main.o :	"D:\\01_WorkPlace\\170_AI\\03_claude_project\\ai-vehicle\\ai-vehicle-public\\Libraries\\Infra\\Sfr\\TC27D\\_Reg\IfxCbs_regdef.h"
+"D:\\01_WorkPlace\\170_AI\\03_claude_project\\ai-vehicle\\ai-vehicle-public\\Libraries\\Infra\\Sfr\\TC27D\\_Reg\IfxCbs_regdef.h" :
+Cpu0_Main.o :	..\Drv_Adc.h
+..\Drv_Adc.h :
 Cpu0_Main.o :	..\App_Scheduler.h
 ..\App_Scheduler.h :
