@@ -1,6 +1,8 @@
 #include "App_Scheduler.h"
 #include "Drv_Stm.h"
 #include "Drv_Adc.h"
+#include "Drv_Pwm.h"
+#include "Drv_Dio.h"
 #include "Port/Std/IfxPort.h"
 #include "IfxCpu_Irq.h"
 
@@ -39,10 +41,17 @@ static void Task_1ms(void)
 }
 
 static volatile uint16 adcValue_AN0;
+volatile float32 g_pwmDutySet = 50.0f;
+volatile uint8   g_motorDir   = 0;      /* 0=Stop, 1=Forward, 2=Reverse */
 
 static void Task_10ms(void)
 {
+    DrvPwm_UpdateCapture();
+
     adcValue_AN0 = DrvAdc_GetResult_AN0();
+
+    DrvPwm_SetDuty(g_pwmDutySet);
+    DrvDio_SetMotorFL((MotorDirection)g_motorDir);
 }
 
 static void Task_100ms(void)

@@ -30,6 +30,7 @@
 #include "Drv_Dio.h"
 #include "Drv_Stm.h"
 #include "Drv_Adc.h"
+#include "Drv_Pwm.h"
 #include "App_Scheduler.h"
 
 IfxCpu_syncEvent cpuSyncEvent = 0;
@@ -44,6 +45,9 @@ void core0_main(void)
 
     /* Initialize VADC - AN0 potentiometer */
     DrvAdc_Init();
+
+    /* Initialize PWM output (P02.4) + TIM capture (P02.0) */
+    DrvPwm_Init();
 
     /* Initialize STM0 1ms interrupt */
     DrvSTM_Init();
