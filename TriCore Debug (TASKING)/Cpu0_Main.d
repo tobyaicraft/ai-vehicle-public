@@ -94,5 +94,9 @@ Cpu0_Main.o :	"D:\\01_WorkPlace\\170_AI\\03_claude_project\\ai-vehicle\\ai-vehic
 "D:\\01_WorkPlace\\170_AI\\03_claude_project\\ai-vehicle\\ai-vehicle-public\\Libraries\\Infra\\Sfr\\TC27D\\_Reg\IfxCbs_regdef.h" :
 Cpu0_Main.o :	..\Drv_Adc.h
 ..\Drv_Adc.h :
+Cpu0_Main.o :	..\Drv_Can.h
+..\Drv_Can.h :
+Cpu0_Main.o :	..\Drv_Pwm.h
+..\Drv_Pwm.h :
 Cpu0_Main.o :	..\App_Scheduler.h
 ..\App_Scheduler.h :

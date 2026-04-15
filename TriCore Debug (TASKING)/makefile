@@ -16,8 +16,11 @@ RM := rm -rf
 -include Libraries/iLLD/TC27D/Tricore/Src/Std/subdir.mk
 -include Libraries/iLLD/TC27D/Tricore/Scu/Std/subdir.mk
 -include Libraries/iLLD/TC27D/Tricore/Port/Std/subdir.mk
+-include Libraries/iLLD/TC27D/Tricore/Multican/Std/subdir.mk
+-include Libraries/iLLD/TC27D/Tricore/Multican/Can/subdir.mk
 -include Libraries/iLLD/TC27D/Tricore/Mtu/Std/subdir.mk
 -include Libraries/iLLD/TC27D/Tricore/Gtm/Std/subdir.mk
+-include Libraries/iLLD/TC27D/Tricore/Gtm/Atom/Pwm/subdir.mk
 -include Libraries/iLLD/TC27D/Tricore/Cpu/Trap/subdir.mk
 -include Libraries/iLLD/TC27D/Tricore/Cpu/Std/subdir.mk
 -include Libraries/iLLD/TC27D/Tricore/Cpu/Irq/subdir.mk

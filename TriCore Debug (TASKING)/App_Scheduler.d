@@ -92,5 +92,11 @@ App_Scheduler.o :	"D:\\01_WorkPlace\\170_AI\\03_claude_project\\ai-vehicle\\ai-v
 "D:\\01_WorkPlace\\170_AI\\03_claude_project\\ai-vehicle\\ai-vehicle-public\\Libraries\\Infra\\Sfr\\TC27D\\_Reg\IfxCbs_regdef.h" :
 App_Scheduler.o :	..\Drv_Adc.h
 ..\Drv_Adc.h :
+App_Scheduler.o :	..\Drv_Can.h
+..\Drv_Can.h :
+App_Scheduler.o :	..\Drv_Pwm.h
+..\Drv_Pwm.h :
+App_Scheduler.o :	..\Drv_Dio.h
+..\Drv_Dio.h :
 App_Scheduler.o :	"D:\\01_WorkPlace\\170_AI\\03_claude_project\\ai-vehicle\\ai-vehicle-public\\Libraries\\iLLD\\TC27D\\Tricore\\Cpu\\Irq\IfxCpu_Irq.h"
 "D:\\01_WorkPlace\\170_AI\\03_claude_project\\ai-vehicle\\ai-vehicle-public\\Libraries\\iLLD\\TC27D\\Tricore\\Cpu\\Irq\IfxCpu_Irq.h" :

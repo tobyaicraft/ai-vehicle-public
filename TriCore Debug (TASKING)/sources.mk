@@ -37,8 +37,11 @@ Libraries/iLLD/TC27D/Tricore/Cpu/CStart \
 Libraries/iLLD/TC27D/Tricore/Cpu/Irq \
 Libraries/iLLD/TC27D/Tricore/Cpu/Std \
 Libraries/iLLD/TC27D/Tricore/Cpu/Trap \
+Libraries/iLLD/TC27D/Tricore/Gtm/Atom/Pwm \
 Libraries/iLLD/TC27D/Tricore/Gtm/Std \
 Libraries/iLLD/TC27D/Tricore/Mtu/Std \
+Libraries/iLLD/TC27D/Tricore/Multican/Can \
+Libraries/iLLD/TC27D/Tricore/Multican/Std \
 Libraries/iLLD/TC27D/Tricore/Port/Std \
 Libraries/iLLD/TC27D/Tricore/Scu/Std \
 Libraries/iLLD/TC27D/Tricore/Src/Std \
