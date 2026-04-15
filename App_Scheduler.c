@@ -1,6 +1,7 @@
 #include "App_Scheduler.h"
 #include "Drv_Stm.h"
 #include "Drv_Adc.h"
+#include "Drv_Can.h"
 #include "Drv_Pwm.h"
 #include "Drv_Dio.h"
 #include "Port/Std/IfxPort.h"
@@ -41,6 +42,7 @@ static void Task_1ms(void)
 }
 
 static volatile uint16 adcValue_AN0;
+static volatile uint8  canRxLedStatus = 0;
 volatile float32 g_pwmDutySet = 50.0f;
 volatile uint8   g_motorDir   = 0;      /* 0=Stop, 1=Forward, 2=Reverse */
 
@@ -52,28 +54,29 @@ static void Task_10ms(void)
 
     DrvPwm_SetDuty(g_pwmDutySet);
     DrvDio_SetMotorFL((MotorDirection)g_motorDir);
+
+    /* Poll CAN RX for LED status from TC237 */
+    uint8 rxLed;
+    if (DrvCan_ReceiveLedStatus(&rxLed))
+    {
+        canRxLedStatus = rxLed;
+    }
 }
 
 static void Task_100ms(void)
 {
-    static uint8 ledCounter = 0;
+    /* Send ADC potentiometer value over CAN (ID 0x200) */
+    DrvCan_SendAdcValue(adcValue_AN0);
 
-    /* ADC 12-bit (0~4095) -> LED toggle period: 1~20 (x100ms)
-     * Pot left (0):    period = 1  -> fast blink (100ms)
-     * Pot right (4095): period = 20 -> slow blink (2s)
-     */
-    uint8 period = (uint8)(adcValue_AN0 / 215) + 1;  /* 4095/19 ≈ 215 */
-    if (period > 20)
+    /* Control LED1 based on received LED status from TC237 */
+    /* LED1 (P00.5) is active-low: LOW = ON, HIGH = OFF */
+    if (canRxLedStatus != 0)
     {
-        period = 20;
+        IfxPort_setPinLow(&MODULE_P00, 5);
     }
-
-    ledCounter++;
-
-    if (ledCounter >= period)
+    else
     {
-        ledCounter = 0;
-        IfxPort_togglePin(&MODULE_P00, 5);
+        IfxPort_setPinHigh(&MODULE_P00, 5);
     }
 }
 
